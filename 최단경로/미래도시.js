@@ -16,7 +16,7 @@ let [x, k] = arr[m].split(' ').map((v) => +v);
 arr.pop();
 arr = arr.map((str) => str.split(' ').map((v) => +v));
 
-// 다익스트라 알고리즘을 사용하여 최단 거리 행렬을 구하는 함수
+// 최단 거리 행렬을 구하는 함수
 function solution(n, m, x, k, arr) {
   // 최단 거리를 저장할 2차원 배열 초기화
   const d = Array.from(Array(n + 1), () => Array(n + 1).fill(Infinity));
