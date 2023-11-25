@@ -43,9 +43,11 @@ function solution(n, m, arr, req) {
 
   // 각 요청에 대해 이진 탐색 수행
   for (const target of req) {
-    if (binarySearch(arr, target, 0, n - 1) !== -1)
+    if (binarySearch(arr, target, 0, n - 1) !== -1) {
       ans += 'yes '; // 해당 부품이 존재하면 'yes'를 결과 문자열에 추가
-    else ans += 'no '; // 존재하지 않으면 'no'를 결과 문자열에 추가
+    } else {
+      ans += 'no '; // 존재하지 않으면 'no'를 결과 문자열에 추가
+    }
   }
 
   return ans;
