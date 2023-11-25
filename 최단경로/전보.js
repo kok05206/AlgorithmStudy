@@ -42,7 +42,9 @@ class PriorityQueue {
     while (i > 0) {
       const parent = ~~((i - 1) / 2); // 부모 노드의 인덱스 계산
       // 부모 노드의 값이 현재 노드의 값보다 작으면 반복 종료
-      if (this.heap[parent] <= this.heap[i]) break;
+      if (this.heap[parent] <= this.heap[i]) {
+        break;
+      }
       // 부모와 현재 노드의 값을 교환
       [this.heap[i], this.heap[parent]] = [this.heap[parent], this.heap[i]];
       i = parent; // 현재 위치를 부모 위치로 갱신

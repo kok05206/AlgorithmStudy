@@ -21,8 +21,9 @@ function solution(n, m, x, k, arr) {
   // 최단 거리를 저장할 2차원 배열 초기화
   const d = Array.from(Array(n + 1), () => Array(n + 1).fill(Infinity));
   // 자기 자신으로의 최단 거리는 0으로 초기화
-  for (let i = 1; i <= n; i++) d[i][i] = 0;
-
+  for (let i = 1; i <= n; i++) {
+    d[i][i] = 0;
+  }
   // 입력으로 주어진 간선 정보를 최단 거리 배열에 반영
   for (const value of arr) {
     const [u, v] = value;
@@ -35,7 +36,9 @@ function solution(n, m, x, k, arr) {
     for (let from = 1; from <= n; from++) {
       for (let to = 1; to <= n; to++) {
         // 자기 자신이거나 출발지와 목적지가 같은 경우는 스킵
-        if (i === from || from === to) continue;
+        if (i === from || from === to) {
+          continue;
+        }
         // 기존 최단 거리와 현재 경유지를 거쳐가는 거리를 비교하여 갱신
         d[from][to] = Math.min(d[from][to], d[from][i] + d[i][to]);
       }
