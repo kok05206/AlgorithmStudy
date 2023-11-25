@@ -3,7 +3,7 @@
 // fs 모듈을 사용하여 파일 시스템에 접근하는 데 사용됨
 const fs = require('fs');
 // 파일에서 읽어온 입력값을 개행 문자('\n')을 기준으로 나누고 배열로 저장
-let input = fs.readFileSync('./input.txt').toString().trim().split('\n');
+let input = fs.readFileSync('../tc.txt').toString().trim().split('\n');
 
 // 첫 번째 줄의 값을 nm에, 나머지를 arr에 할당
 let [nm, ...arr] = input;
