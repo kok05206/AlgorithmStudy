@@ -1,4 +1,6 @@
-// fs 모듈을 사용하여 파일을 동기적으로 읽어옴
+// 숫자카드 게임
+
+// 입력값을 파일에서 읽어와서 문자열로 저장
 let input = fs.readFileSync('./tc.txt').toString().trim().split('\n');
 
 // 첫 번째 줄의 값을 nm에, 나머지를 arr에 할당

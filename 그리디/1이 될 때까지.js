@@ -1,6 +1,8 @@
+//1이 될 때까지
+
 // fs 모듈을 사용하여 파일을 동기적으로 읽어옴
 const fs = require('fs');
-let input = fs.readFileSync('./tc.txt').toString().trim();
+let input = fs.readFileSync('./input.txt').toString().trim();
 
 // 입력 문자열을 공백을 기준으로 분리하여 숫자로 변환한 후 n과 k에 할당
 let [n, k] = input.split(' ').map((v) => +v);
