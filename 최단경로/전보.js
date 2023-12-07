@@ -97,21 +97,6 @@ class PriorityQueue {
   }
 }
 
-// PriorityQueue 클래스를 사용하는 예시
-const pq = new PriorityQueue();
-pq.push(3);
-pq.push(5);
-pq.push(2);
-pq.pop();
-pq.push(6);
-pq.push(1);
-pq.pop();
-
-// 큐가 비어있지 않은 동안 원소를 꺼내어 출력
-while (!pq.empty()) {
-  console.log(pq.pop());
-}
-
 // 다익스트라 알고리즘을 이용한 최단 거리 및 최대 거리 계산 함수
 function solution(n, m, c, arr) {
   // 각 노드의 연결 정보를 저장할 그래프 초기화
